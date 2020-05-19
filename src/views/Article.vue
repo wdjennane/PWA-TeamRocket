@@ -1,12 +1,13 @@
 <template>
   <div class="">
-    <h1>Homepage</h1>
+    <h1>An article</h1>
+    {{ $route.params.slug }}
   </div>
 </template>
 
 <script>
 export default {
-  name: "app-home"
+  name: "app-article"
 }
 </script>
 
