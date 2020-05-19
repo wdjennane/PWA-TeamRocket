@@ -6,6 +6,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-weight: normal;
   color: map-get($colors, black);
+  background-color: map-get($colors, dark-white);
+  line-height: 155%;
 }
 
 a {

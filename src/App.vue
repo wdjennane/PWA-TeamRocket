@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <app-nav />
-    <main class="main">
+    <app-nav v-if="$route.name !== 'home'" />
+    <main :class="$route.name !== 'home' ? 'main' : 'main--home'">
       <router-view />
     </main>
   </div>
@@ -9,6 +9,7 @@
 
 <script>
 import AppNav from "@/components/AppNav.vue"
+
 export default {
   components: {
     AppNav
@@ -20,7 +21,7 @@ export default {
 @import "~@/assets/scss/style";
 
 .main {
-  max-width: 1440px;
+  max-width: 1400px;
   margin: 60px auto 0;
 }
 </style>

@@ -3,7 +3,6 @@
     <div class="nav__container">
       <router-link :to="{ name: 'home' }" class="nav__logo">
         <img src="@/assets/images/logo.svg" alt="logo" />
-        <span>News</span>
       </router-link>
       <router-link :to="{ name: 'articles' }">
         Articles
@@ -17,6 +16,8 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import "~@/assets/scss/variables";
+
 .nav {
   width: 100%;
   top: 0;
@@ -25,6 +26,7 @@ export default {}
   justify-content: center;
   position: fixed;
   padding: 0 1rem;
+  background-color: map-get($colors, white);
 
   &__container {
     max-width: 1440px;
@@ -40,10 +42,6 @@ export default {}
     text-transform: uppercase;
     display: flex;
     align-items: flex-end;
-
-    span {
-      margin: 0 0 0 0.25rem;
-    }
   }
 }
 </style>
