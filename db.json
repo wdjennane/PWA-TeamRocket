@@ -1,0 +1,58 @@
+{
+  "articles": [
+    {
+      "id": "e48a8e4b-3af3-4d43-9e28-baae69081b9b",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "slug": "lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit",
+      "author": "Joshua Horn",
+      "created_at": "Tue May 17 2020 13:00:00 GMT+0200",
+      "thumbnail": "https://www.hiepsibaotap.com/wp-content/uploads/2020/04/1072679-1200x630.jpg",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><img src='https://ocdn.eu/images/pulscms/NzA7MDA_/97e07245-c31f-471a-8d35-fe54a9d57ccd.jpeg' alt='' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p>"
+    },
+    {
+      "id": "fdead9fd-f8e9-4906-9a30-4d16595185c4",
+      "title": "Curabitur gravida arcu ac tortor dignissim convallis aenean et",
+      "slug": "curabitur-gravida-arcu-ac-tortor-dignissim-convallis-aenean et",
+      "author": "Mila Browning",
+      "created_at": "Tue May 17 2020 16:30:00 GMT+0200",
+      "thumbnail": "https://www.breakflip.com/uploads/VALORANT/Vignettes/cypher-valorant.jpg",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><img src='https://ocdn.eu/images/pulscms/NzA7MDA_/97e07245-c31f-471a-8d35-fe54a9d57ccd.jpeg' alt='' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p>"
+    },
+    {
+      "id": "62f37046-9ecc-49e2-838e-f17a1499b4bf",
+      "title": "Suspendisse potenti nullam ac tortor",
+      "slug": "suspendisse-potenti-nullam-ac-tortor",
+      "author": "Anjali Osborn",
+      "created_at": "Tue May 18 2020 14:20:00 GMT+0200",
+      "thumbnail": "https://i.imgur.com/2RcAqJk.jpg",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><img src='https://ocdn.eu/images/pulscms/NzA7MDA_/97e07245-c31f-471a-8d35-fe54a9d57ccd.jpeg' alt='' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p>"
+    },
+    {
+      "id": "7f95bde6-2406-40f7-9873-33e2d3b87753",
+      "title": "Non curabitur gravida arcu ac tortor dignissim",
+      "slug": "non-curabitur-gravida-arcu-ac-tortor-dignissim",
+      "author": "Milan Terry",
+      "created_at": "Tue May 18 2020 22:45:00 GMT+0200",
+      "thumbnail": "https://www.breakflip.com/uploads/VALORANT/Vignettes/cypher-valorant.jpg",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><img src='https://ocdn.eu/images/pulscms/NzA7MDA_/97e07245-c31f-471a-8d35-fe54a9d57ccd.jpeg' alt='' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p>"
+    },
+    {
+      "id": "ed90e35b-a69d-4ac4-a817-24d05269a459",
+      "title": "Ac placerat vestibulum lectus mauris ultrices eros",
+      "slug": "ac-placerat-vestibulum-lectus-mauris-ultrices-eros",
+      "author": "Blaine Ayers",
+      "created_at": "Tue May 19 2020 14:55:00 GMT+0200",
+      "thumbnail": "https://www.breakflip.com/uploads/VALORANT/Vignettes/omen-valorant.jpg",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><img src='https://ocdn.eu/images/pulscms/NzA7MDA_/97e07245-c31f-471a-8d35-fe54a9d57ccd.jpeg' alt='' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p>"
+    },
+    {
+      "id": "a539e8c8-9c78-4209-b447-065afa9da34c",
+      "title": "Urna neque viverra justo nec",
+      "slug": "urna-neque-viverra-justo-nec",
+      "author": "Aalia Mitchell",
+      "created_at": "Tue May 19 2020 18:00:00 GMT+0200",
+      "thumbnail": "https://www.breakflip.com/uploads/Poro/streamer-francais-valorant-twitch.png",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p><img src='https://ocdn.eu/images/pulscms/NzA7MDA_/97e07245-c31f-471a-8d35-fe54a9d57ccd.jpeg' alt='' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu.</p>"
+    }
+  ]
+}
