@@ -1,21 +1,26 @@
 <template>
   <div id="app">
-    <router-view />
+    <app-nav />
+    <main class="main">
+      <router-view />
+    </main>
   </div>
 </template>
 
 <script>
-export default {}
+import AppNav from "@/components/AppNav.vue"
+export default {
+  components: {
+    AppNav
+  }
+}
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap");
+@import "~@/assets/scss/style";
 
-#app {
-  font-family: "Rubik", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: normal;
-  color: #333333;
+.main {
+  max-width: 1440px;
+  margin: 60px auto 0;
 }
 </style>
