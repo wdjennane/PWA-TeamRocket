@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <app-nav v-if="$route.name !== 'home'" />
-    <main>
+    <app-nav v-if= "$route.name !== 'home'" />
+    <main :class= "$route.name === 'home' ? 'normal_main' : 'main'" >
       <router-view />
     </main>
   </div>
@@ -20,8 +20,7 @@ export default {
 <style lang="scss">
 @import "~@/assets/scss/style";
 
-.main {
-  max-width: 1400px;
-  margin: 60px auto 0;
+.normal_main {
+  margin: none;
 }
 </style>
