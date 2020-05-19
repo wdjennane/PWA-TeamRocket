@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <app-nav v-if="$route.name !== 'home'" />
-    <main :class="$route.name !== 'home' ? 'main' : 'main--home'">
+    <main>
       <router-view />
     </main>
   </div>

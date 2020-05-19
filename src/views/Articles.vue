@@ -1,5 +1,5 @@
 <template>
-  <div class="articles">
+  <div class="articles container">
     <h1 class="title">Les dernières actus</h1>
     <ul class="articles__list">
       <li v-for="article in articles" :key="article.id" class="articles__item">
@@ -13,7 +13,7 @@
             class="articles__thumbnail"
           />
           <div class="articles__container">
-            <div class="article__content">
+            <div class="articles__content">
               <span class="articles__info">
                 Le {{ formatDate(article.date, "LL") }} par
                 {{ article.author }}
@@ -81,10 +81,11 @@ export default {
 }
 
 .articles {
+  margin: 60px auto 0;
   padding: 1rem;
 
   @include breakpoint(lg) {
-    padding: 3rem 0;
+    padding: 3rem 1rem;
   }
 
   &__list {
@@ -173,6 +174,7 @@ export default {
   &__text {
     -webkit-line-clamp: 3;
     margin: 0 0 2rem 0;
+    line-height: 150%;
   }
 
   &__button {

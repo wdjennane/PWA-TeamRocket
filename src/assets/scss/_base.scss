@@ -7,7 +7,6 @@ body {
   font-weight: normal;
   color: map-get($colors, black);
   background-color: map-get($colors, dark-white);
-  line-height: 155%;
 }
 
 a {
@@ -17,4 +16,14 @@ a {
 
 img {
   display: block;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+
+  &--small {
+    max-width: 800px;
+    margin: auto;
+  }
 }
