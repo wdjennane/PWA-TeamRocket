@@ -23,5 +23,8 @@ export default new Router({
       name: "article",
       component: Article
     }
-  ]
+  ],
+  scrollBehavior() {
+    return { x: 0, y: 0 }
+  }
 })
