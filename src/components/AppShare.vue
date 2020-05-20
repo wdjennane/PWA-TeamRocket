@@ -22,11 +22,11 @@ export default {
       shares: [
         {
           name: "twitter",
-          url: `https://www.facebook.com/sharer.php?u=${window.location.pathname}`
+          url: `https://www.facebook.com/sharer.php?u=${window.location.href}`
         },
         {
           name: "facebook",
-          url: `https://twitter.com/intent/tweet?url=${window.location.pathname}`
+          url: `https://twitter.com/intent/tweet?url=${window.location.href}`
         }
       ]
     }

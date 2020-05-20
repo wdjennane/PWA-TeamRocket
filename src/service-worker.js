@@ -30,3 +30,22 @@ workbox.routing.registerRoute(
     ]
   })
 )
+
+self.addEventListener("push", event => {
+  const pushMessage = event.data.text()
+
+  const options = {
+    body: pushMessage,
+    icon: "./img/icon-152x152.png",
+    tag: "vibration-sample"
+  }
+
+  event.waitUntil(self.registration.showNotification(pushMessage, options))
+})
+
+// self.addEventListener("notificationclick", event => {
+//   event.notification.close()
+
+//   const promiseChain = clients.openWindow("http://127.0.0.1:8887/#/")
+//   event.waitUntil(promiseChain)
+// })
