@@ -1,112 +1,264 @@
 <template>
-<section>
-<div class="container">
-  <img class="background" src="@/assets/images/valorant.jpg" alt="image">
-  <div class="logo_container">
-  <img class="logo" src="@/assets/images/logo-white.svg" alt="logo">
-  <span>News</span>
+  <div class="home">
+    <img
+      src="@/assets/images/valorant.jpg"
+      alt="background"
+      class="home__background"
+    />
+
+    <div class="home__container">
+      <nav class="nav">
+        <router-link :to="{ name: 'home' }" class="nav__logo">
+          <img src="@/assets/images/logo-white.svg" alt="logo" />
+        </router-link>
+        <router-link :to="{ name: 'articles' }" class="nav__link">
+          Articles
+        </router-link>
+      </nav>
+
+      <div class="home__titles">
+        <p class="home__title">Valorant</p>
+        <p class="home__title home__title--second">News</p>
+      </div>
+
+      <div class="scroll">scroll down</div>
+    </div>
+    <div class="articles">
+      <ul class="articles__list container">
+        <li
+          v-for="article in articles"
+          :key="article.id"
+          class="articles__item"
+        >
+          <app-article-item :article="article" />
+        </li>
+      </ul>
+
+      <router-link :to="{ name: 'articles' }" class="articles__button">
+        Découvrir d'autres articles
+      </router-link>
+    </div>
   </div>
-  <div class="main_title">
-    <p>Valorant</p>
-    <p class="title_last">News</p>
-  </div>
-  <div class="filter"/>
-  <span class="scroll">scroll</span>
- </div>
- <ArticleSection/>
- </section>
 </template>
 
 <script>
-import ArticleSection from '../components/ArticleSection'
+import axios from "axios"
+import AppArticleItem from "@/components/AppArticleItem"
+
 export default {
   name: "app-home",
-
   components: {
-    ArticleSection
+    AppArticleItem
+  },
+  data() {
+    return {
+      articles: []
+    }
+  },
+  async created() {
+    const { data } = await axios({
+      method: "get",
+      url:
+        "https://my-json-server.typicode.com/wdjennane/PWA-teamrocket/articles"
+    })
+    this.articles = data.filter((article, index) => index < 3)
   }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "~@/assets/scss/variables";
+@import "~@/assets/scss/mixins";
 
-.container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: 100vh;
- .background {
-   position: absolute;
+.home {
+  &__container {
+    position: relative;
     height: 100vh;
-    width: 100vw;
-  }
-
- .filter {
-   position: absolute;
-   top: 0;
-   height: 100%;
-   width: 100%;
-   background-color: #000000;
-   opacity: 0.4;
- }
-
- .logo_container {
-    height: 50px;
     display: flex;
-    align-items: center;
-    z-index: 5;
-    margin: 27px 0 40px 61px;
-    .logo {
-      height: 60px;
-      width: 60px;
-      margin-right: 10px;
+    flex-direction: column;
   }
-  span {
-    font-size: 36px;
-    color: white;
-    font-weight: bold;
-    align-self: center;
+
+  &__background {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(60%);
+    z-index: -1;
   }
- }
 
- .main_title {
-    color: white;
+  &__titles {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint(lg) {
+      transform: translate(-20rem, 10rem);
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
     font-weight: bold;
-    line-height: 100px;
-    width: 560px;
-    font-size: 96px;
-    margin-top: 80px;
-    margin-left: 70px;
-    z-index: 5;
+    text-transform: uppercase;
+    color: map-get($colors, white);
 
-    p {
-      color: white;
+    @include breakpoint(s) {
+      font-size: 4rem;
     }
-    .title_last {
-      text-align: end;
+
+    @include breakpoint(lg) {
+      font-size: 6rem;
     }
- }
- .scroll {
-   position: relative;
-   font-size: 40px;
-   font-weight: bold;
-   color: white;
-   z-index: 5;
-   writing-mode:vertical-rl;
-   margin-right: 40px;
-   margin-top: 160px;
 
-   &::after {
-     position: absolute;
-     right: 20px;
-     top: 120px;
-     content: "";
-     height: 100px;
-     width: 3px;
-     background-color: #fff;
+    &--second {
+      @include breakpoint(s) {
+        margin: 0 0 0 10rem;
+      }
 
-   }
- }
+      @include breakpoint(lg) {
+        margin: 0 0 0 30rem;
+      }
+    }
+  }
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+
+  @include breakpoint(lg) {
+    padding: 0 1rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    img {
+      height: 60px;
+      width: 60px;
+    }
+  }
+
+  &__link {
+    color: map-get($colors, white);
+    font-weight: bold;
+  }
+}
+
+.scroll {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 0 1rem;
+  color: map-get($colors, white);
+  margin-top: auto;
+  margin-left: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+
+  &::before {
+    content: "";
+    margin: 0 0 1rem 0;
+    height: 100px;
+    width: 2px;
+    background-color: map-get($colors, white);
+    transform-origin: bottom;
+    will-change: transform;
+    animation: scroll 1s both 0.1s infinite;
+
+    @keyframes scroll {
+      0% {
+        transform: scaleY(0);
+      }
+
+      100% {
+        transform: scaleY(1);
+      }
+    }
+  }
+}
+
+.articles {
+  padding: 2rem 0;
+  background-color: map-get($colors, black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  &__item {
+    background-color: map-get($colors, white);
+    box-shadow: 0px 0px 10x rgba($color: map-get($colors, black), $alpha: 0.25);
+    transition: box-shadow 0.3s;
+    margin: 0 0 2rem 0;
+
+    @include breakpoint(s) {
+      width: calc(100% / 2 - 0.5rem);
+    }
+
+    @include breakpoint(lg) {
+      width: calc(100% / 3 - 1rem);
+
+      &:hover {
+        box-shadow: 0px 0px 20px
+          rgba($color: map-get($colors, black), $alpha: 0.25);
+      }
+    }
+
+    @include breakpoint(lg) {
+      margin: 0 0 2rem 0;
+    }
+  }
+
+  &__button {
+    position: relative;
+    color: map-get($colors, white);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: 2px solid map-get($colors, white);
+    overflow: hidden;
+    z-index: 2;
+    text-align: center;
+
+    @include breakpoint(m) {
+      font-size: 1.5rem;
+      padding: 1rem 3rem;
+      &:hover {
+        color: map-get($colors, black);
+
+        &::before {
+          transform: scaleX(1);
+        }
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      transform: scaleX(0);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: left;
+      transition: transform 0.3s, color 0.3s 0.3s;
+      background-color: map-get($colors, white);
+      z-index: -1;
+    }
+  }
+}
 </style>
