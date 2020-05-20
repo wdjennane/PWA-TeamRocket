@@ -43,6 +43,10 @@ self.addEventListener("push", event => {
   event.waitUntil(self.registration.showNotification(pushMessage, options))
 })
 
+self.addEventListener("install", () => {
+  self.skipWaiting()
+})
+
 // self.addEventListener("notificationclick", event => {
 //   event.notification.close()
 
